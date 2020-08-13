@@ -17,11 +17,11 @@ Old configuration:
 3. Point nameservers of dummy domain to Cloudflare and wait until the registrar informs you that the nameserver update has been made.
 4. Check the `Overview` tab in Cloudflare. If it looks like the one below, you are good to go.
 
-![Successful Nameserver Configuration](./docs/media/overview.png)
+![Successful Nameserver Configuration](docs/media/overview.png)
 
 5. Go to the `DNS` tab and create A name records for `@` (which is root, i.e., `my-domain.com`) and `www` (this depends on whether you want to change the IP to which `www.my-domain.com` points as well). The IP address field should be filled with the new IP. Once that is complete, the configuration of your dummy domain should look like:
 
-![DNS Records Configuration](./docs/media/dns-records.png)
+![DNS Records Configuration](docs/media/dns-records.png)
 
 6. Click on the `SSL/TLS` tab and make sure that the `Full` configuration is selected, as shown:
 
